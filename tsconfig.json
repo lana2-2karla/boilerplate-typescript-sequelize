@@ -1,0 +1,32 @@
+{
+  // Configurações do compilador TypeScript
+  "compilerOptions": {
+    // Define o diretório de saída para os arquivos compilados
+    "outDir": "./build",
+    // Define o diretório raiz onde os arquivos TypeScript estão localizados
+    "rootDir": ".",
+    // Define a versão do ECMAScript que o código deve ser compilado (ES2019)
+    "target": "es2019",
+    // Define o sistema de módulos a ser usado (CommonJS)
+    "module": "commonjs",
+    // Define os diretórios onde os tipos (tipos de dados) personalizados podem ser encontrados
+    "typeRoots": [
+      "src/@types", // Diretório de tipos personalizados no projeto
+      "./node_modules/@types" // Diretório de tipos instalados via npm
+    ],
+    // Permite a interoperabilidade fácil entre módulos ES6 e CommonJS
+    "esModuleInterop": true,
+    // Permite a importação de arquivos JSON como módulos
+    "resolveJsonModule": true,
+    // Força a consistência no uso de letras maiúsculas/minúsculas em nomes de arquivos
+    "forceConsistentCasingInFileNames": true,
+    // Habilita verificações rigorosas durante a compilação
+    "strict": true,
+    // Pula a verificação de bibliotecas (tipos de terceiros) durante a compilação
+    "skipLibCheck": true
+  },
+  // Lista de diretórios/arquivos a serem excluídos durante a compilação
+  "exclude": [
+    "node_modules"
+  ]
+}
